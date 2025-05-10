@@ -37,7 +37,7 @@ jobs:
         uses: pulumi/actions@v6
         with:
           command: up
-          stack-name: guigo/stg
+          stack-name: stg
           cloud-url: s3://pulumi-state-guigo-ftr
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
